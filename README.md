@@ -1,5 +1,3 @@
-TESTE DE TESTE
+MEU PRIMEIRO SITE INTERATIVO
 
- * mudei, amou?
- * alterei por aqui, amou?
- * comando fetch
+APENAS TESTANDO COMANDOS GIT
