@@ -1,0 +1,100 @@
+.bg {
+    opacity: 2.0;
+} 
+
+.hero {
+    display: flex;
+    padding-inline: 1.25rem;
+    padding-top: 3rem; /* Diminui o espaçamento superior da seção */
+    overflow: hidden;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+
+.hero__title {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    border-radius: 10px;
+
+}
+
+.hero__description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 300;
+    line-height: calc(1em + 0.5rem);
+    margin-block: 1.5rem;
+    max-width: 100ch;
+    color: #032f53;
+}
+
+.hero__left {
+    flex: 1;
+    position: relative; /* Permite manipular a posição do robô */
+    top: 300px; /* Ajuste esse valor para mover o robô para cima */
+
+}
+.hero__right {
+    flex: 1;
+    position: relative; /* Permite manipular a posição do robô */
+    top: -50px; /* Ajuste esse valor para mover o robô para cima */
+    right: -100px;
+}
+.hero_up-text
+{
+    color: #030b7e;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+.hero__btn {
+    font-size: 1rem;
+    background: linear-gradient(to top, #789dee, #017ffd, #789dee);
+    padding: 0.5em 2em;
+    border-radius: 6px;
+    color: #032f53;
+}
+
+/*hero right */
+
+.hero_img {
+    max-width: 600px;
+    margin-top: 0;
+    align-items: center
+}
+
+@media (width < 1024px) {
+    .hero {
+        flex-direction:column;
+        gap: 2.5rem;
+    }
+    .hero.title{
+        max-width: 20ch;
+    }
+    .hero_img {
+        width: 80%;
+        max-width: 350px;
+        margin-inline: auto;
+        display: flex;
+    }
+    .hero__left {
+        flex: 1;
+        position:relative; /* Permite manipular a posição do robô */
+        top: 10px; /* Ajuste esse valor para mover o robô para cima */
+    }
+    .hero__right {
+        flex: 1;
+        position: relative; /* Permite manipular a posição do robô */
+        top: 10; /* Ajuste esse valor para mover o robô para cima */
+        right: 0px;
+    }
+
+}
+@media (width < 475px) {
+    .hero_title {
+        font-size: 2.5rem;
+    }
+}
